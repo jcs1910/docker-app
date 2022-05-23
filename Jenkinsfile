@@ -3,7 +3,7 @@ node {
          checkout scm
      }
      stage('Build image') {
-         app = docker.build("jcs1910/deploy-boiler-plate/docker-react-app/simple-app/")
+         app = docker.build("jcs1910/docker-app")
          
      }
      stage('Push image') {
@@ -15,7 +15,7 @@ node {
 }
 
 stage('Build image') {
-  app = docker.build("jcs1910/deploy-boiler-plate/docker-react-app/simple-app/")
+  app = docker.build("jcs1910/docker-app")
 }
 
 
